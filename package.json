@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "A speech to text demo.",
   "main": "src/index.js",
+  "homepage": "http://krishnkant2020.github.io/speech",
   "scripts": {
-    "start": "HTTPS=true react-scripts start",
-    "build": "react-scripts build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "react"
   ],
   "author": "Krishnkant tiwari",
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "react-scripts": "^3.3.1"
   },
   "dependencies": {
